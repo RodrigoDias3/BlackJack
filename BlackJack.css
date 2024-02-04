@@ -29,6 +29,24 @@
     display: none;
 }
 
+#botao{
+    width: 100px;
+    height: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    margin: 3px;
+    background-color: rgb(31, 31, 31);
+    color: black;
+    border-style: dashed;
+    top: 85%;
+    left: 47.5%;
+    position: absolute;
+}
+
+#botao:hover{
+    background-color: white;
+}
+
 .primaryButton{
     width: 100px;
     height: 60px;
