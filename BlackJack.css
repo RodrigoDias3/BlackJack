@@ -277,7 +277,7 @@
     .Results{
         margin: 10px;
         width: 50%;
-        height: 50%;
+        height: 45%;
         background-color: rgba(139, 0, 0, 0.95);
         color: black;
         text-align: center;
@@ -300,7 +300,7 @@
         width: 40%;
         margin: 1px;
         top: 5%;
-        left: 3%;
+        left: 2%;
         position: absolute;
         font-size: 20px;
         font-family: Arial, Helvetica, sans-serif;
