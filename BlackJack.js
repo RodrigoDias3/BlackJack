@@ -18,6 +18,8 @@ var canClose = true;
 var blackjack = false;
 var dealerBlackJack = false;
 
+var canStay = true;
+
 function closeAposta(){
     var aposta = document.querySelector('.aposta');
 
@@ -102,7 +104,8 @@ function sleep(ms) {
 async function stay(){
     canClose = false;
 
-    if (!canPlay){
+    if (!canPlay && canStay){
+        canStay = false;
 
         hiddenImage.src = "./cards/" + hidden + ".png";
 
@@ -477,6 +480,7 @@ function cleanSys(){
     
     canHit = false; 
     canPlay = true;
+    canStay = true;
 
     document.getElementById('yourCards').innerHTML = '';
     document.getElementById('dealerCards').innerHTML = '';
