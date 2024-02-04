@@ -38,8 +38,8 @@
     background-color: rgb(31, 31, 31);
     color: black;
     border-style: dashed;
-    top: 85%;
-    left: 47.5%;
+    top: 10%;
+    left: 85%;
     position: absolute;
 }
 
@@ -349,6 +349,20 @@
         transform: translate(-50%,-50%);
         display: none;
         overflow: scroll;
+    }
+
+    #botao{
+        width: 80px;
+        height: 40px;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 3px;
+        background-color: rgb(31, 31, 31);
+        color: black;
+        border-style: dashed;
+        top: 5%;
+        left: 98%;
+        position: absolute;
     }
 
 }
