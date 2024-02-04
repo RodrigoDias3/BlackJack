@@ -116,7 +116,7 @@ async function stay(){
         while (aces > 0)
         {
             aces -= 1;
-            if(temp > 21)
+            if(temp > 16)
             {
                 temp -= 10;
             }
