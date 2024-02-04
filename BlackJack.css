@@ -36,7 +36,7 @@
     cursor: pointer;
     margin: 3px;
     background-color: rgb(31, 31, 31);
-    color: black;
+    color: white;
     border-style: dashed;
     top: 10%;
     left: 85%;
@@ -45,6 +45,7 @@
 
 #botao:hover{
     background-color: white;
+    color: black;
 }
 
 .primaryButton{
@@ -358,7 +359,7 @@
         color: black;
         border-style: dashed;
         top: 5%;
-        left: 80%;
+        left: 75%;
         position: absolute;
     }
 
