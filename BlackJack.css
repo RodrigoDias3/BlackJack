@@ -44,8 +44,7 @@
 }
 
 #botao:hover{
-    background-color: white;
-    color: black;
+    background-color: black;
 }
 
 .primaryButton{
@@ -70,12 +69,12 @@
     cursor: pointer;
     margin: 3px;
     background-color: rgb(31, 31, 31);
-    color: black;
+    color: white;
     border-style: dashed;
 }
 
 .secundaryButton:hover{
-    background-color: white;
+    background-color: rgba(220, 20, 60, 0.5);
 }
 
 .options{
@@ -345,7 +344,7 @@
         cursor: pointer;
         margin: 3px;
         background-color: rgb(31, 31, 31);
-        color: black;
+        color: white;
         border-style: dashed;
     }
 
