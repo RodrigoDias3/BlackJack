@@ -110,7 +110,17 @@ async function stay(){
 
         sleep(500);
 
-        temp = dealerHand;
+        var temp = dealerHand;
+        var aces = countDealerAce;
+
+        while (aces > 0)
+        {
+            aces -= 1;
+            if(temp > 21)
+            {
+                temp -= 10;
+            }
+        }
 
         while (temp < 17 || dealerHand < 17) 
         {
