@@ -19,6 +19,7 @@ var blackjack = false;
 var dealerBlackJack = false;
 
 var canStay = true;
+var canDouble = true;
 
 function closeAposta(){
     var aposta = document.querySelector('.aposta');
@@ -214,8 +215,10 @@ function checkHands(){
 }
 
 function double(){
-    if (canHit)
+    if (canHit && canDouble)
     {
+        canDouble = false;
+
         setBet(bet);
 
         var cardImg = document.createElement("img");
@@ -481,6 +484,7 @@ function cleanSys(){
     canHit = false; 
     canPlay = true;
     canStay = true;
+    canDouble = true;
 
     document.getElementById('yourCards').innerHTML = '';
     document.getElementById('dealerCards').innerHTML = '';
