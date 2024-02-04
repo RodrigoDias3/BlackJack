@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackJack</title>
+    <link rel="stylesheet" href="BlackJack.css">
+    <script src="BlackJack.js"></script>
+</head>
+<body>
+    <div class="Background">
+        <h1>BlackJack By Rodrigo Dias</h1>
+        <br>
+        <table class="options">
+            <tr>
+                <td>
+                    <button class="primaryButton" onclick="openGame()">New Game!</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="primaryButton" onclick="openRules()">Rules</button>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <button class="primaryButton" onclick="openAbout()">About</button>
+                </td>
+            </tr>
+        </table>
+        
+        <div class="Rules">
+            <h1>Rules of BlackJack:</h1>
+            <br>
+            <p>
+                Welcome to the exciting world of Blackjack! This classic card game is easy to learn and offers a thrilling experience at the casino. 
+                Here are the basic rules to get you started:
+            </p>
+            <br>
+            <p>
+                <h2>Objective:</h2>
+                <br>
+                The goal of Blackjack is to beat the dealer by having a hand value closer to 21 without exceeding it. 
+                A hand value of 21 with your first two cards is called a "Blackjack" and is the best possible outcome.
+            </p>
+            <br>
+            <p>
+                <h2>Card Values:</h2>
+                <br>
+                Number cards (2-10) are worth their face value.
+                Face cards (Jack, Queen, King) are each worth 10 points.
+                Aces can be worth either 1 or 11 points, depending on which value benefits your hand more.
+            </p>
+            <br>
+            <p>
+                <h2>Gameplay:</h2>
+                <br><br>
+                <b>1º</b>
+                <br>
+                <u>Dealing Cards:</u> 
+                <br><br>
+                Each player, including the dealer, is dealt two cards. Players' cards are usually dealt face-up, while the dealer has one card face-up 
+                (known as the "upcard") and one face-down (known as the "hole card").
+                <br><br>
+                <b>2º</b>
+                <br>
+                <u>Player's Turn:</u>
+                <br><br>
+                You can choose to "Hit" to receive another card or "Stand" to keep your current hand.
+                You can continue to hit until you decide to stand, or your hand exceeds 21, resulting in a "bust."
+                <br><br>
+                <b>3º</b>
+                <br>
+                <u>Dealer's Turn:</u>
+                <br><br>
+                Once all players have completed their turn, the dealer reveals the hole card.
+                The dealer must hit until their hand reaches at least 17. Some variations may require the dealer to hit on a soft 17 
+                (a hand containing an Ace valued as 11).
+                <br><br>
+                <b>4º</b>
+                <br>
+                <u>Winning:</u>
+                <br><br>
+                If your hand is closer to 21 than the dealer's without busting, you win.
+                A Blackjack (an Ace and a 10-value card) typically pays 3:2.
+                If you and the dealer tie, it's a "push," and you get your bet back.
+                <br><br>
+                <b>5º</b>
+                <br>
+                <u>Insurance:</u>
+                <br><br>
+                If the dealer's upcard is an Ace, players have the option to buy "insurance" against a potential dealer Blackjack. 
+                Insurance is a separate bet and pays 2:1 if the dealer has a Blackjack.
+                <br><br>
+                <b>6º</b>
+                <br>
+                <u>Enjoy:</u>
+                <br><br>
+                Remember, the key is to make strategic decisions based on your hand and the dealer's upcard. 
+                Enjoy the game, and good luck at the Blackjack table!
+                <br><br>
+            </p>
+            <button class="secundaryButton" onclick="closeWindows()">Exit</button>
+        </div>
+
+        <div class="About">
+            <h2>About Me:</h2>
+            <br><br>
+            <p>
+                Hello! I'm Rodrigo Dias, a Computer Engineering enthusiast currently in my second year of undergraduate studies. 
+                My passion lies in practicing and showcasing my capabilities as a developer.
+            </p>
+            <br>
+            <p>
+                The realm of programming is truly fascinating, and I am eager to explore its endless possibilities. 
+                Inspired by my love for the game of blackjack, I decided to embark on a personal project. 
+                This endeavor not only reflects my dedication to programming but also serves as an opportunity to 
+                demonstrate how I can apply my skills to create something both enjoyable and functional.
+            </p>
+            <br>
+            <p>
+                I believe this project is just the beginning of an exciting journey, and I am enthusiastic about the prospect of many more projects to come. 
+                I look forward to sharing my experiences, continually learning, and contributing to the vast world of technology.
+            </p>
+            <br>
+            <p>
+                Let's build a future full of innovation and challenges together!
+            </p>
+            <br>
+            <button class="secundaryButton" onclick="closeWindows()">Exit</button>
+        </div>
+        
+        <div class="Game">
+            <div class="chips">
+                <p>Stack:</p>
+                <p id="stack"></p>
+            </div>
+
+            <div class="aposta">
+                <br>
+                <h3>Place Your Bet</h3>
+                <p id="bet"></p>
+                <br>
+                <table>
+                    <tr>
+                        <td><button class="buttonBet" style="background-color: green;" onclick="buttonBet(1)">1</button></td>
+                        <td><button class="buttonBet" style="background-color: rgb(0, 189, 252);" onclick="buttonBet(5)">5</button></td>
+                    </tr>
+                    <tr>
+                        <td><button class="buttonBet" style="background-color: orange;" onclick="buttonBet(10)">10</button></td>
+                        <td><button class="buttonBet" style="background-color: hotpink;" onclick="buttonBet(50)">50</button></td>
+                    </tr>
+                </table>
+                <button class="buttonBet" style="height: 40px;" onclick="buttonBet(0)">←</button>
+                <br>
+                <button class="playButton" onclick="startGame()">Play !</button>
+            </div>
+
+            <br><br>
+            <h2>Dealer:</h2>
+            <p id="dealerValue">(???)</p>
+            <br>
+
+            <div id="dealerCards">
+
+            </div>
+
+            <br>
+            <h2>You:</h2>
+            <p id="playerValue"></p>
+            <br>
+
+            <div id="yourCards">
+            </div>
+
+            <br>
+
+            <button class="primaryButton" onclick="hit()">Hit</button>
+            <button class="primaryButton" onclick="stay()">Stay</button>
+            <button class="primaryButton" onclick="double()">Double</button>
+
+            <div class="Results">
+                <p>RESULTS:</p><br>
+                <p id="headerResult"></p><br>
+                <p id="msg"></p>
+                <br><br>
+                <button class="secundaryButton" onclick="openResults()">Continue</button>
+            </div>
+
+            <br><br><br>
+
+            <button class="secundaryButton" onclick="closeWindows()">Exit</button>
+        </div>
+    </div>
+</body>
+</html>
