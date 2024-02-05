@@ -8,6 +8,7 @@ Features:
 
 How to Play:
 Just click the link down below
+
 https://rodrigodias3.github.io/BlackJack/
 
 Contributions:
