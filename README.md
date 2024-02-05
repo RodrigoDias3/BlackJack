@@ -5,7 +5,7 @@ Whether you're a seasoned card player or new to the world of gambling, this inte
 Features:
 - Sleek User Interface: Enjoy a visually appealing and intuitive user interface designed for a seamless gaming experience.
 - Realistic Gameplay: Experience the excitement of Blackjack with realistic card animations and dynamic gameplay.
-- 
+
 How to Play:
 Just click the link down below
 https://rodrigodias3.github.io/BlackJack/
