@@ -486,6 +486,8 @@ function cleanSys(){
     canStay = true;
     canDouble = true;
 
+    blackjack = false;
+
     document.getElementById('yourCards').innerHTML = '';
     document.getElementById('dealerCards').innerHTML = '';
     document.getElementById('headerResult').innerHTML = '';
